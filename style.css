@@ -1,0 +1,281 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: "Rubik",sans-serif;
+}
+body {
+    font-family: "Rubik", sans-serif;
+    background-color: aliceblue;
+    overflow-x: hidden;
+    color: rgb(151, 149, 149);
+}
+.nav{
+    width: 100%;
+    height: 48px;
+    background-color:white;
+    display: block;
+    color: rgb(135 133 133)
+}
+.nav-row{
+    width: 100%;
+    height: 48px;
+}
+.row{
+    height: 48px;
+}
+.list-item{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 48px;
+    margin-bottom: 0px;
+}
+.list-item li{
+    padding-left: 12px;
+    margin-left: 3px;
+    display:inline-block;
+    text-align: center;
+}
+.col-7{
+    height: 48px;
+}
+.list-item li p{
+    font-size: 10px;
+}
+.list-item p{
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.middle-items{
+    margin-left: 20px;
+    float:right;
+}
+
+.col-3 .orchid-img{
+    width: 23px;
+}
+.col-3 .company-info{
+    position: relative;
+    padding-right: 0px;
+    float:right;
+}
+.company-info .fa-caret-down{
+    position: absolute;
+    top: 15px;
+    margin-left: auto;
+    right: 1px;
+    color: black;
+}
+.pro-inventory{
+    white-space: nowrap;
+}
+.nav ul{
+    margin-right: -16px;
+}
+.company-info p{
+    font-size: 12px !important;
+    margin-left: -8px;
+    color: black;
+
+}
+.cross {
+    margin-left: 20px;
+    color: black !important;
+    font-size: 10px !important;
+    padding-top: 4px !important;
+}
+.sub-header {
+    background-color: white;
+    width: 100%;
+    height: 24px;
+    margin-top: 0px;
+
+}
+
+.sub-header ul {
+    background-color: #f0f0f0;
+    display: flex;
+    height: 100%;
+    margin-left: 3px;
+    align-items: center;
+    margin-top: 0px;
+}
+
+.sub-header li {
+    display: flex;
+    padding: 2px 7.5px;
+    text-align: center;
+    height: 100%;
+    background-color: rgb(243, 243, 243);
+}
+.sub-header .settings{
+    background-color: white !important;
+}
+.settings i,.settings p{
+    color: black !important;
+}
+.sub-header p {
+    font-size: 11px;
+    color: rgb(151, 149, 149);
+    font-weight: 400;
+    margin-left: 8px;
+    align-items: center;
+}
+
+.sub-header i {
+    font-size: .8rem;
+    color: rgb(151, 149, 149);
+    padding-top: 1px;
+}
+.project-section{
+    background-color: white;
+}
+ul{
+    margin-bottom: 0px !important;
+    padding-left: 0px !important;
+}
+.project{
+    display: flex;
+    list-style-type: none !important;
+    margin-left: 18px;
+}
+.project li{
+    margin-left: 7px;
+}
+.project a{
+    font-size: 12px;
+    text-decoration: none!important;
+    color: rgb(151, 149, 149);
+}
+.new-project{
+    color: black !important;
+    text-decoration: none;
+}
+.project i{
+    font-size: 8px;
+}
+.side-arrow{
+    color: grey;
+    font-size: 9px;
+    width: 13px;
+    height: 13px;
+    background-color: lightgray;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 4px;
+    margin-left: 25px;
+    line-height: 1.5;
+}
+.side-arrow-parent{
+    display: flex;
+    background-color: white;
+    margin-bottom: 0px;
+}
+.side-arrow-parent span{
+    color: #2586cb;
+    font-size: 14px;
+    margin-left: 3px;
+    margin-top: 5px;
+}   
+.detail{
+    background-color: white;
+    margin: 5px 9px;
+    border-radius: 5px;
+    overflow: hidden;
+    perspective: 1px;
+    
+}
+.accordion-button{
+    color: rgb(63, 63, 63) !important;
+    background-color: white !important;
+    padding: 1px 8px;
+    border-radius: 5px !important;
+    font-size: 13px;
+    border-bottom:none;
+}
+
+.accordion-button:focus {
+    outline: 0;
+    background-color: white;
+    box-shadow: none;
+    
+}    
+.divider {
+    border-top: 1px solid lightgray;
+    margin-top: 4px;
+    width: 1178px !important;
+    margin-left: 10px;
+}
+.form-control::placeholder{
+color: rgb(219, 219, 219);
+}
+.accordion-body {
+    padding: 0px;
+}   
+.row-detail{
+    margin-top: 13px;
+    height: 40px;
+    color: rgb(201, 199, 199)!important;
+}
+.row-detail-2{
+    margin-top: 4px;
+    height: 40px;
+}
+.cl-3{
+    padding-left: 0px;
+}
+.detail-primary{
+   margin: 0px 22px;
+   margin-right: 10px;
+}
+.detail-secondary{
+    margin:0px 10px;
+}
+.detail-secondary a{
+    color: #2586cb;
+    font-size: 11px;
+    text-decoration: none;
+    
+}
+.accordion-header{
+    margin-top: 10px;
+}
+.form-control-cal{
+    position:relative;
+}
+.cal-day1{
+    position: absolute;
+    top: 57px;
+    left: 272px;
+}
+.cal-day2{
+    position: absolute;
+    top: 57px;
+    right: 20px;
+}
+.column-project-lead{
+    position: relative;
+}
+.carret-project-lead{
+    position: absolute;
+    top: 7px;
+    left: 264px;
+}
+.column-project-duration{
+    position:relative;
+}
+.carret-duration{
+    position: absolute;
+    top: 7px;
+    left: 264px;
+}
+.column-leave{
+    position:relative;
+}
+.carret-leave{
+    position: absolute;
+    top: 7px;
+    left: 264px;
+}
