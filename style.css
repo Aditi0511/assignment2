@@ -411,3 +411,7 @@ a{
 .form-desc{
     height: 65px !important;
 }
+.inner-header{
+    color: #2586cb !important;
+    font-weight: 400 !important;
+}
