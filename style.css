@@ -1,66 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
-.center {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 250px;
-	height: 150px;
-	border-radius: 3px;
-	background: #fff;
-	display: flex;
-	align-items: center;
-	justify-content: space-evenly;
-	flex-direction: column;
-	border:1px solid grey;
-}
-
-.title {
-	width: 100%;
-	height: 50px;
-	text-align: left;
-}
-
-h1 {
-	font-size: 12px;
-	font-weight: 300;
-	color:skyblue;
-}
-
-.dropzone {
-	width: 50px;
-	height: 80px;
-	border-radius: 3px;
-	text-align: center;
-}
-
-.upload-icon {
-	margin: 25px 2px 2px 2px;
-}
-
-.upload-input {
-	position: relative;
-	top: -62px;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	opacity: 0;
-}
-
-.btn {
-	display: block;
-	width: 140px;
-	height: 40px;
-	
-	color: grey;
-
-	border: 0;
-
-	transition: all 0.3s ease-in-out;
-	font-size: 14px;
-}
-
-
 
 *{
     padding: 0%;
@@ -70,7 +7,7 @@ h1 {
 }
 body {
     font-family: "Rubik", sans-serif;
-    background-color: aliceblue;
+    background-color: aliceblue !important;
     overflow-x: hidden;
     color: rgb(151, 149, 149);
 }
@@ -83,9 +20,6 @@ body {
 }
 .nav-row{
     width: 100%;
-    height: 48px;
-}
-.row{
     height: 48px;
 }
 .list-item{
@@ -259,19 +193,7 @@ ul{
     font-size: 13px;
     border-bottom:none;
 }
-
-.accordion-button:focus {
-    outline: 0;
-    background-color: white;
-    box-shadow: none;
-    
-}    
-.divider {
-    border-top: 1px solid lightgray;
-    margin-top: 4px;
-    width: 1178px !important;
-    margin-left: 10px;
-}
+   
 .form-control::placeholder{
 color: rgb(219, 219, 219);
 }
@@ -289,6 +211,7 @@ color: rgb(219, 219, 219);
 }
 .cl-3{
     padding-left: 0px;
+    margin-top: 13px;
 }
 .detail-primary{
    margin: 0px 22px;
@@ -311,13 +234,14 @@ color: rgb(219, 219, 219);
 }
 .cal-day1{
     position: absolute;
-    top: 57px;
-    left: 272px;
+    top: 72px;
+    left: 274px;
+    color: lightgray;
 }
 .cal-day2{
     position: absolute;
-    top: 57px;
-    right: 20px;
+    top: 72px;
+    right: 27px;
 }
 .column-project-lead{
     position: relative;
@@ -346,11 +270,6 @@ color: rgb(219, 219, 219);
 .carret-project-lead{
     color: rgb(201, 199, 199)!important;;
 }
-
-
-
-
-
 @import  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='1em' viewBox='0 0 448 512'%3E%3C!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --%3E%3Cpath d='M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z'/%3E%3C/svg%3E");
 .panel-title > a:before {
     float: left !important;
@@ -388,4 +307,107 @@ color: rgb(219, 219, 219);
 }
 .upload-button {
     margin-top: -12px !important;
+}
+.row-collapse-set a{
+    padding-left: 20px;
+}
+.row-collapse-set{
+    margin-bottom: 5px;
+}
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 250px;
+	height: 150px;
+	border-radius: 3px;
+	background: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	flex-direction: column;
+	border:1px solid grey;
+}
+
+.title {
+	width: 100%;
+	height: 50px;
+	text-align: left;
+}
+
+h1 {
+	font-size: 12px;
+	font-weight: 300;
+	color:skyblue;
+}
+
+.dropzone {
+	width: 50px;
+	height: 80px;
+	border-radius: 3px;
+	text-align: center;
+}
+
+.upload-icon {
+	margin: 25px 2px 2px 2px;
+}
+
+.upload-input {
+	position: relative;
+	top: -62px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+}
+
+.btn {
+	display: block;
+	width: 140px;
+	color: grey;
+	border: 0;
+	transition: all 0.3s ease-in-out;
+	font-size: 14px;
+}
+.card-all{
+    margin: 7px 6px;
+    margin-left: px;
+    /* border: none !important; */
+}
+
+.card-body-heading a{
+    text-decoration: none !important;
+    color: #2586cb !important;
+}
+.card-body h5{
+    color: black;
+}
+.row{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+.row-detail{
+    border-top: 1px solid rgb(190, 187, 187);
+}
+a{
+    color: #2586cb !important;
+}
+.card-body-heading a{
+    font-size: 12px;
+} 
+.row-user-info{
+    margin-left: -8px !important;
+    display: flex;
+    margin-top: 19px;
+}
+.project-cost{
+    margin-top: auto !important;
+}
+.task-cost{
+    margin-top: auto !important;
+}
+.form-desc{
+    height: 65px !important;
 }

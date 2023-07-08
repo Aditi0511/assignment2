@@ -13,25 +13,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" crossorigin="anonymous"></script>
-    <script>
-                     
-        $(document).ready(function(){
-              $('.collapse.in').each(function(){
-                $(this).parent().find(".glyphicon").removeClass("glyphicon-plus").addClass("glyphicon-minus");
-            });
-              
-            $('.collapse').on('shown.bs.collapse', function(){
-                $(this).parent().find(".glyphicon-plus").removeClass("glyphicon-plus").addClass("glyphicon-minus");
-            }).on('hidden.bs.collapse', function(){
-                $(this).parent().find(".glyphicon-minus").removeClass("glyphicon-minus").addClass("glyphicon-plus");
-            });       
-        });
-        </script>
 </head>
 
 <body>
@@ -160,7 +147,7 @@
                 <i class="fa fa-angle-left side-arrow" aria-hidden="true"></i></a><span>New Project</span>
         </div>
     </div>
-    <section class="detail">
+    <!-- <section class="detail">
         <div class="accordion">
             <div class="accordion-item">
                 <h2 class="accordion-header" id="flush-headingOne">
@@ -257,8 +244,8 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section class="detail">
+    </section> -->
+    <!-- <section class="schedule">
         <div class="accordion accordion-flush" id="accordionFlushExample">
             <div class="accordion-item">
                 <h2 class="accordion-header" id="flush-headingOne">
@@ -309,142 +296,213 @@
                                 </div>
                             </div>
                         </div>
-
-                       
-                        <body>
-                        <div class="container">
-                            <div class="panel-group" id="accordion1">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4 class="panel-title">
-                                            <button class="btn btn-link" data-target="#Exampleone" data-toggle="collapse" data-parent="#accordion1">
-                                                <span class="glyphicon glyphicon-plus"></span>
-                                                Description
-                                            </button>
-                                        </h4>
+                        <div class="row row-collapse-set">
+                            <div class="col-3 cl-3"> 
+                                <a data-bs-toggle="collapse" href="#collapseExample"
+                                    aria-expanded="false" aria-controls="collapseExample">
+                                    +Description
+                                </a>
+                                <div class="collapse" id="collapseExample">
+                                    <div class="card card-body">
+                                        Description here..
                                     </div>
-                                    <div class="panel-collapse collapse in" id="Exampleone">
-                                        <div class="panel-body">
-                                          <textarea row="5" column="8"></textarea>
-                                        </div>
-                                    </div>
-                                 </div>
-                                 <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4 class="panel-title">
-                                            <button class="btn btn-link" data-target="#Exampletwo" data-toggle="collapse" data-parent="#accordion1">
-                                                <span class="glyphicon glyphicon-plus"></span>
-                                                Attach Document
-                                            </button>
-                                        </h4>
-                                    </div>
-                                    <div class="panel-collapse collapse" id="Exampletwo">
-                                        <div class="panel-body">
-                                           
-                                            <div class="frame">
-                                                <div class="center">
-                                                    <div class="dropzone">
-                                                        <img src="http://100dayscss.com/codepen/upload.svg" class="upload-icon" />
-                                                        <input type="file" class="upload-input" />
-                                                    </div>
-                                            
-                                                    <button type="button" class="btn upload-button" name="uploadbutton">Upload Document</button>
-                                            
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
+                                  </div>
                             </div>
-                        </div>
-                        </div>
-                                 
-                    <div class="row row-detail">
-                        <div class="col-3 cl-3">
-                            <input class="form-control form-control-sm" type="text" placeholder="Company GSTIN*"
-                                aria-label=".form-control-sm example">
-                        </div>
-                        <div class="col-3 cl-3">
-                            <input class="form-control form-control-sm" type="text" placeholder="Branch"
-                                aria-label=".form-control-sm example">
-                        </div>
-                        <div class="col-3 cl-3">
-                            <input class="form-control form-control-sm" type="text" placeholder="Category"
-                                aria-label=".form-control-sm example">
-                        </div>
-                        <div class="col-3 cl-3">
-                            <input class="form-control form-control-sm" type="text" placeholder="Project Name*"
-                                aria-label=".form-control-sm example">
+                            <div class="col-3 cl-3">
+                                <a class="upload-doc" data-bs-toggle="collapse" href="#collapseExample2" role="link"
+                                    aria-expanded="false" aria-controls="collapseExample2">
+                                    +Attach Document
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                </div>
+            </div>
         </div>
-    </section>
-    <section class="detail">
-        <div class="accordion accordion-flush" id="accordionFlushExample">
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingOne">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                        Casting
-                    </button>
-                </h2>
-                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
-                    data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                        <div class="divider"></div>
-                        <div class="detail-primary">
-                            <div class="row row-detail">
-                                <div class="col-3 cl-3">
-                                    <input class="form-control form-control-sm" type="text" placeholder="Company GSTIN*"
-                                        aria-label=".form-control-sm example">
-                                </div>
-                                <div class="col-3 cl-3">
-                                    <input class="form-control form-control-sm" type="text" placeholder="Branch"
-                                        aria-label=".form-control-sm example">
-                                </div>
-                                <div class="col-3 cl-3">
-                                    <input class="form-control form-control-sm" type="text" placeholder="Category"
-                                        aria-label=".form-control-sm example">
-                                </div>
-                                <div class="col-3 cl-3">
-                                    <input class="form-control form-control-sm" type="text" placeholder="Project Name*"
-                                        aria-label=".form-control-sm example">
-                                </div>
-                            </div>
-                            <div class="row row-detail-2">
-                                <div class="col-3 cl-3">
-                                    <input class="form-control form-control-sm" type="text"
-                                        placeholder=".form-control-sm" aria-label=".form-control-sm example">
-                                </div>
-                                <div class="col-3 cl-3">
-                                    <input class="form-control form-control-sm" type="text"
-                                        placeholder=".form-control-sm" aria-label=".form-control-sm example">
-                                </div>
-                            </div>
-                            <div class="row row-detail-2">
-                                <div class="col-3 cl-3">
-                                    <input class="form-control form-control-sm" type="text"
-                                        placeholder=".form-control-sm" aria-label=".form-control-sm example">
-                                </div>
-                                <div class="col-3 cl-3">
-                                    <input class="form-control form-control-sm" type="text"
-                                        placeholder=".form-control-sm" aria-label=".form-control-sm example">
-                                </div>
-                                <div class="col-3 cl-3">
-                                    <input class="form-control form-control-sm" type="text"
-                                        placeholder=".form-control-sm" aria-label=".form-control-sm example">
-                                </div>
-                                <div class="col-3 cl-3">
-                                    <input class="form-control form-control-sm" type="text"
-                                        placeholder=".form-control-sm" aria-label=".form-control-sm example">
+        </div>
+        <div class="row row-detail">
+            <div class="col-3 cl-3">
+                <input class="form-control form-control-sm" type="text" placeholder="Company GSTIN*"
+                    aria-label=".form-control-sm example">
+            </div>
+            <div class="col-3 cl-3">
+                <input class="form-control form-control-sm" type="text" placeholder="Branch"
+                    aria-label=".form-control-sm example">
+            </div>
+            <div class="col-3 cl-3">
+                <input class="form-control form-control-sm" type="text" placeholder="Category"
+                    aria-label=".form-control-sm example">
+            </div>
+            <div class="col-3 cl-3">
+                <input class="form-control form-control-sm" type="text" placeholder="Project Name*"
+                    aria-label=".form-control-sm example">
+            </div>
+        </div>
+
+    </section> -->
+    <div class="card card-all">
+        <div class="card-body card-body-heading">
+            <a data-bs-toggle="collapse" href="#detail-collapse" role="button" aria-expanded="false"
+                aria-controls="collapseExample">
+                <h5>Detail</h5>
+            </a>
+            <div class="collapse" id="detail-collapse">
+                <div class="row row-detail">
+                    <div class="col-3 cl-3">
+                        <input class="form-control form-control-sm" type="text" placeholder="Company GSTIN*"
+                            aria-label=".form-control-sm example">
+                    </div>
+                    <div class="col-3 cl-3">
+                        <input class="form-control form-control-sm" type="text" placeholder="Branch"
+                            aria-label=".form-control-sm example">
+                    </div>
+                    <div class="col-3 cl-3">
+                        <input class="form-control form-control-sm" type="text" placeholder="Category"
+                            aria-label=".form-control-sm example">
+                    </div>
+                    <div class="col-3 cl-3">
+                        <input class="form-control form-control-sm" type="text" placeholder="Project Name*"
+                            aria-label=".form-control-sm example">
+                    </div>
+                </div>
+                <div class="row row-detail-2">
+                    <div class="col-3 cl-3">
+                        <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm"
+                            aria-label=".form-control-sm example">
+                    </div>
+                    <div class="col-3 cl-3 column-project-lead">
+                        <form>
+                            <select class="form-control form-control-sm" type="text" placeholder="Company GSTIN*"
+                                aria-label=".form-control-sm example">
+                                <option value="volvo">Volvo</option>
+                                <option value="saab">Saab</option>
+                                <option value="opel">Opel</option>
+                                <option value="audi">Audi</option>
+                            </select>
+                        </form>
+                        <i class="fa-solid fa-caret-down carret-project-lead"></i>
+                    </div>
+                </div>
+                <div class="row row-detail-2">
+                    <div class="col-3 cl-3">
+                        <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm"
+                            aria-label=".form-control-sm example">
+                    </div>
+                    <div class="col-3 cl-3">
+                        <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm"
+                            aria-label=".form-control-sm example">
+                    </div>
+                    <div class="col-3 cl-3">
+                        <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm"
+                            aria-label=".form-control-sm example">
+                    </div>
+                    <div class="col-3 cl-3">
+                        <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm"
+                            aria-label=".form-control-sm example">
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <a href="#">+ Another Person</a>
+                </div>
+                <div class="mt-2">
+                    <a href="#">+ Block /Wing Information</a>
+                </div>
+                <div class="mt-2">
+                    <a href="#">+ Payment Plan (S)</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card card-all">
+        <div class="card-body card-body-heading">
+            <a data-bs-toggle="collapse" href="#attach-doc-collapse" role="button" aria-expanded="false"
+                aria-controls="attach-doc-collapse">
+                <h5>Schedule</h5>
+            </a>
+            <div class="collapse" id="attach-doc-collapse">
+                <div class="row row-detail">
+                    <div class="col-3 cl-3">
+                        <input class="form-control form-control-sm form-control-cal" type="text"
+                            placeholder="Company GSTIN*" aria-label=".form-control-sm example">
+                        <i class="fa-solid fa-calendar-days cal-day1"></i>
+                    </div>
+                    <div class="col-3 cl-3 column-project-duration">
+                        <form>
+                            <select class="form-control form-control-sm" type="text" placeholder="Company GSTIN*"
+                                aria-label=".form-control-sm example">
+                                <option value="volvo">Volvo</option>
+                                <option value="saab">Saab</option>
+                                <option value="opel">Opel</option>
+                                <option value="audi">Audi</option>
+                            </select>
+                        </form>
+                        <i class="fa-solid fa-caret-down carret-duration"></i>
+                    </div>
+                    <div class="col-3 cl-3 column-leave">
+                        <form>
+                            <select class="form-control form-control-sm" type="text" placeholder="Company GSTIN*"
+                                aria-label=".form-control-sm example">
+                                <option value="volvo">Volvo</option>
+                                <option value="saab">Saab</option>
+                                <option value="opel">Opel</option>
+                                <option value="audi">Audi</option>
+                            </select>
+                        </form>
+                        <i class="fa-solid fa-caret-down carret-leave"></i>
+                    </div>
+                    <div class="col-3 cl-3">
+                        <input class="form-control form-control-sm" type="text" placeholder="Project Name*"
+                            aria-label=".form-control-sm example">
+                        <i class="fa-solid fa-calendar-days cal-day2"></i>
+                    </div>
+                </div>
+                <div class="row row-user-info">
+                    <div class="col-3">
+                        <div class="user-detail-info">
+                            <div class="user-related">
+                                <a data-bs-toggle="collapse" href="#desc-collapse" role="button" aria-expanded="false"
+                                    aria-controls="desc-collapse">
+                                    <h5>Description</h5>
+                                </a>
+                                <div class="collapse" id="desc-collapse">
+                                   <input class="form-control form-control-sm form-desc" type="text"
+                                        placeholder="Description" aria-label=".form-control-sm example">
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="col-3 ">
+                        <a data-bs-toggle="collapse" href="#upload-doc-collapse" role="button" aria-expanded="false"
+                            aria-controls="upload-doc-collapse">
+                            <h5>Attach Document</h5>
+                        </a>
+                        <div class="collapse" id="upload-doc-collapse">
+                            <div class="card card-user-realted">
+                                <div class="card-body">
+                                    <div class="mb-3">
+                                        <input class="form-control form-control-sm" id="formFileSm" type="file">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 project-cost">
+                        <input class="form-control form-control-sm form-control-cal" type="text"
+                            placeholder="Company GSTIN*" aria-label=".form-control-sm example">
+                        <i class="fa-solid fa-calendar-days cal-day1"></i>
+                    </div>
+                    <div class="col-3 task-cost">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                            <label class="form-check-label" for="flexCheckChecked">
+                                Calculate from Task Cost
+                            </label>
+                        </div>
+                    </div>
                 </div>
-    </section>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
