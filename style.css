@@ -6,27 +6,27 @@
     font-family: "Rubik",sans-serif;
 }
 body {
-    font-family: "Rubik", sans-serif;
+    font-family: "Mulish", sans-serif;
     background-color: aliceblue !important;
     overflow-x: hidden;
     color: rgb(151, 149, 149);
 }
 .nav{
     width: 100%;
-    height: 48px;
+    height: 54px;
     background-color:white;
     display: block;
-    color: rgb(135 133 133)
+    color: rgb(135 133 133);
 }
 .nav-row{
     width: 100%;
-    height: 48px;
+    height: 100% !important;
 }
 .list-item{
     display: flex;
     align-items: center;
     list-style-type: none;
-    height: 48px;
+    height: 100%;
     margin-bottom: 0px;
 }
 .list-item li{
@@ -34,23 +34,44 @@ body {
     margin-left: 3px;
     display:inline-block;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.list-item li i{
+    font-size: 17px;
+    padding-bottom: 5px;
+}
+.list-item span{
+    white-space: nowrap;
+}
+.list-item a{
+    font-size: 10px;
+    color: rgb(165, 163, 163) !important;
 }
 .col-7{
-    height: 48px;
+    height: 100%;
 }
-.list-item li p{
-    font-size: 10px;
-}
-.list-item p{
-    margin-bottom: 0px;
-    margin-top: 0px;
-}
-
 .middle-items{
     margin-left: 20px;
+    padding-left: 5px;
     float:right;
 }
-
+.middle-items li{
+    margin-right: 10px;
+}
+.middle-items li i{
+    font-size: 17px !important;
+}
+.list-item .icon-project{
+    color: #2586cb !important;
+    text-decoration: none;
+}
+.col-2{
+    margin-left: 29px;
+}
+.col-3{
+    width: 22%;
+}
 .col-3 .orchid-img{
     width: 23px;
 }
@@ -59,9 +80,17 @@ body {
     padding-right: 0px;
     float:right;
 }
+.company-info .company-name{
+    margin-top: 2px;
+    font-size: 13px !important;
+    text-decoration: none;
+    color: #2c2a2a !important;
+    margin-left: -6px;
+    
+}
 .company-info .fa-caret-down{
     position: absolute;
-    top: 15px;
+    top: 18px;
     margin-left: auto;
     right: 1px;
     color: black;
@@ -69,15 +98,8 @@ body {
 .pro-inventory{
     white-space: nowrap;
 }
-.nav ul{
-    margin-right: -16px;
-}
-.company-info p{
-    font-size: 12px !important;
-    margin-left: -8px;
-    color: black;
 
-}
+
 .cross {
     margin-left: 20px;
     color: black !important;
@@ -85,15 +107,14 @@ body {
     padding-top: 4px !important;
 }
 .sub-header {
-    background-color: white;
+    background-color: aliceblue !important;
     width: 100%;
-    height: 24px;
+    height: 27px;
     margin-top: 0px;
 
 }
 
 .sub-header ul {
-    background-color: #f0f0f0;
     display: flex;
     height: 100%;
     margin-left: 3px;
@@ -114,21 +135,21 @@ body {
 .settings i,.settings p{
     color: black !important;
 }
-.sub-header p {
+
+.sub-header a{
     font-size: 11px;
+    color: rgb(165, 163, 163) !important;;
+}
+.sub-header i {
+    font-size: 10px;
     color: rgb(151, 149, 149);
-    font-weight: 400;
-    margin-left: 8px;
-    align-items: center;
+    padding-top: 5px;
+    margin-right: 7px;
 }
 
-.sub-header i {
-    font-size: .8rem;
-    color: rgb(151, 149, 149);
-    padding-top: 1px;
-}
 .project-section{
     background-color: white;
+    padding: 5px 0px;
 }
 ul{
     margin-bottom: 0px !important;
@@ -162,18 +183,19 @@ ul{
     background-color: lightgray;
     border-radius: 50%;
     text-align: center;
-    margin-right: 4px;
-    margin-left: 25px;
+    
+    margin: 9px 4px 0px 25px;
     line-height: 1.5;
 }
 .side-arrow-parent{
     display: flex;
     background-color: white;
     margin-bottom: 0px;
+    padding-bottom: 8px;
 }
 .side-arrow-parent span{
     color: #2586cb;
-    font-size: 14px;
+    font-size: 16px;
     margin-left: 3px;
     margin-top: 5px;
 }   
@@ -201,16 +223,14 @@ color: rgb(219, 219, 219);
     padding: 0px;
 }   
 .row-detail{
-    margin-top: 13px;
     height: 40px;
     color: rgb(201, 199, 199)!important;
 }
 .row-detail-2{
-    margin-top: 4px;
+    margin-top: 5px;
     height: 40px;
 }
 .cl-3{
-    padding-left: 0px;
     margin-top: 13px;
 }
 .detail-primary{
@@ -270,22 +290,6 @@ color: rgb(219, 219, 219);
 .carret-project-lead{
     color: rgb(201, 199, 199)!important;;
 }
-@import  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='1em' viewBox='0 0 448 512'%3E%3C!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --%3E%3Cpath d='M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z'/%3E%3C/svg%3E");
-.panel-title > a:before {
-    float: left !important;
-    font-family: FontAwesome;
-    content:"\f068";
-    padding-right: 5px;
-}
-.panel-title > a.collapsed:before {
-    float: left !important;
-    content:"\f067";
-}
-.panel-title > a:hover, 
-.panel-title > a:active, 
-.panel-title > a:focus  {
-    text-decoration:none;
-}
 
 .panel-heading {
     padding: 0px !important;
@@ -313,22 +317,6 @@ color: rgb(219, 219, 219);
 }
 .row-collapse-set{
     margin-bottom: 5px;
-}
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
-.center {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 250px;
-	height: 150px;
-	border-radius: 3px;
-	background: #fff;
-	display: flex;
-	align-items: center;
-	justify-content: space-evenly;
-	flex-direction: column;
-	border:1px solid grey;
 }
 
 .title {
@@ -390,6 +378,7 @@ h1 {
 }
 .row-detail{
     border-top: 1px solid rgb(190, 187, 187);
+    margin-bottom: 5px;
 }
 a{
     color: #2586cb !important;
@@ -398,9 +387,7 @@ a{
     font-size: 12px;
 } 
 .row-user-info{
-    margin-left: -8px !important;
     display: flex;
-    margin-top: 19px;
 }
 .project-cost{
     margin-top: auto !important;
@@ -414,4 +401,24 @@ a{
 .inner-header{
     color: #2586cb !important;
     font-weight: 400 !important;
+    padding: 2px 7px;
+}
+.btn-outline-secondary{
+    color: black;
+    border: 1px solid rgb(207, 198, 198) !important;
+    margin-left: 20px;
+    font-size: 12px !important;
+    width: 100px;
+}
+.row-cost{
+    margin-bottom: 30px;
+}
+.btn-primary{
+    margin-left: 10px;
+    font-size: 12px !important;
+    text-align: left !important;
+}
+button .fa-caret-down{
+    margin-left: 20px;
+     width: 150px;
 }
