@@ -531,7 +531,7 @@ a {
     content: '+';
 }
 
-.main-title a ::after {
+.main-title>a ::after {
     content: "\2303";
     float: right;
     color: rgb(80, 142, 235);
@@ -543,7 +543,7 @@ a {
     text-align: center;
 }
 
-.main-title a.collapsed ::after {
+.main-title>a.collapsed ::after {
     content: "\2303";
     transform: rotate(180deg);
     float: right;
