@@ -14,7 +14,7 @@ body {
 
 .nav {
     width: 100%;
-    height: 54px;
+    height: 70px;
     background-color: white;
     display: block;
     color: rgb(135 133 133);
@@ -43,7 +43,7 @@ body {
 }
 
 .list-item li i {
-    font-size: 17px;
+    font-size: 19px;
     padding-bottom: 5px;
 }
 
@@ -52,18 +52,15 @@ body {
 }
 
 .list-item a {
-    font-size: 10px;
+    font-size: 11px;
     color: rgb(165, 163, 163) !important;
 }
 
 .col-7 {
     height: 100%;
-    margin-left: -4px !important;
 }
 
 .middle-items {
-    margin-left: 20px;
-    padding-left: 5px;
     float: right;
 }
 
@@ -80,13 +77,7 @@ body {
     text-decoration: none;
 }
 
-.col-2 {
-    margin-left: 29px;
-}
 
-.col-3 {
-    width: 22%;
-}
 
 .col-3 .orchid-img {
     width: 23px;
@@ -108,9 +99,9 @@ body {
 
 .company-info .fa-caret-down {
     position: absolute;
-    top: 18px;
+    top: 25px;
     margin-left: auto;
-    right: 1px;
+    right: 0px;
     color: black;
 }
 
@@ -128,7 +119,6 @@ body {
 .sub-header {
     background-color: aliceblue !important;
     width: 100%;
-    height: 27px;
     margin-top: 0px;
 }
 
@@ -142,7 +132,7 @@ body {
 
 .sub-header li {
     display: flex;
-    padding: 2px 7.5px;
+    padding: 8px 8px;
     text-align: center;
     height: 100%;
     background-color: rgb(243, 243, 243);
@@ -217,21 +207,26 @@ ul {
     background-color: rgb(235, 234, 234);
     border-radius: 50%;
     text-align: center;
-    margin: 7px 4px 0px 25px;
+    margin-left: 26px;
     line-height: 1.5;
 }
 
 .side-arrow-parent {
     display: flex;
+    align-items: center;
     background-color: white;
     margin-bottom: 0px;
     padding-bottom: 8px;
     color: gray;
 }
-
+.arrow-text{
+    display: flex;
+    align-items: center;
+}
 .form-control {
     border-radius: 7px !important;
     box-shadow: none !important;
+    border: 2px solid #efefef !important;
 }
 
 .side-arrow-parent i {
@@ -241,7 +236,7 @@ ul {
 .side-arrow-parent span {
     color: #2586cb !important;
     font-size: 16px;
-    margin-left: 3px;
+    margin-left: 7px;
     margin-top: 3px;
     text-decoration: none !important;
 }
@@ -336,7 +331,7 @@ a:link {
 .cal-day2 {
     position: absolute;
     top: 72px;
-    right: 28px;
+    right: 29px;
 }
 
 .column-project-lead {
@@ -345,8 +340,8 @@ a:link {
 
 .carret-project-lead {
     position: absolute;
-    top: 7px;
-    left: 264px;
+    top: 9px;
+    left: 295px;
 }
 
 .column-project-duration {
@@ -355,8 +350,8 @@ a:link {
 
 .carret-duration {
     position: absolute;
-    top: 7px;
-    left: 264px;
+    top: 9px;
+    left: 295px;
 }
 
 .column-leave {
@@ -365,8 +360,8 @@ a:link {
 
 .carret-leave {
     position: absolute;
-    top: 7px;
-    left: 264px;
+    top: 9px;
+    left: 295px;
 }
 
 .carret-project-lead {
@@ -454,7 +449,8 @@ h1 {
 }
 
 .card-body h5 {
-    color: #524d4d;
+    color:#5e5a5a;
+    font-size: 15px;
 }
 
 .row {
@@ -463,16 +459,18 @@ h1 {
 }
 
 .row-detail {
-    border-top: 1px solid rgb(190, 187, 187);
+    border-top: 2px solid rgb(247, 242, 242);
     margin-bottom: 5px;
 }
-
+h6{
+    font-size: 15px;
+}
 a {
     color: #2586cb !important;
 }
 
 .card-body-heading a {
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .row-user-info {
@@ -495,16 +493,19 @@ a {
     color: #2586cb !important;
     font-weight: 400 !important;
     padding: 2px 7px;
+    font-size: 14px !important;
 }
 
 .btn-outline-secondary {
-    color: black;
+    color: rgb(75, 73, 73);
     border: 1px solid rgb(207, 198, 198) !important;
     margin-left: 20px;
     font-size: 12px !important;
     width: 100px;
 }
-
+.btn-outline-secondary:hover{
+    background-color: white !important;
+}
 .row-cost {
     margin-bottom: 30px;
 }
@@ -521,7 +522,9 @@ a {
 .user-related a.collapsed::before {
     content: '+';
 }
-
+.user-related{
+    margin-left: 10px;
+}
 .attach-doc a::before {
     content: '-';
     float: left;
@@ -534,27 +537,48 @@ a {
 .main-title>a ::after {
     content: "\2303";
     float: right;
-    color: rgb(80, 142, 235);
-    font-size: 18px;
-    border: 1px solid rgb(80, 142, 235);
+    color: rgb(42, 108, 207);
+    font-size: 22px;
+    border: 1px solid rgb(204, 220, 245);
     border-radius: 3px;
-    padding: 1px 2px;
+    padding: 10px 6px;
     display: inline-block;
     text-align: center;
+    line-height: 0.5;
+    height: 1px;
+    font-weight: 600;
+    border-radius: 6px;
+   
 }
 
 .main-title>a.collapsed ::after {
     content: "\2303";
     transform: rotate(180deg);
     float: right;
-    color: rgb(80, 142, 235);
-    font-size: 18px;
-    border: 1px solid rgb(80, 142, 235);
-    border-radius: 3px;
-    padding: 1px 2px;
+    color: rgb(42, 108, 207);
+    font-size: 22px;
+    border: 1px solid  rgb(204, 220, 245);
+    padding: 10px 6px;
     display: inline-block;
     text-align: center;
+    line-height: 0.5;
+    height: 1px;
+    font-weight: 600;
+    border-radius: 6px;
 }
+
+/* .card-heading .accicon {
+    float: right;
+    font-size: 20px;  
+    
+  }
+  .fa-angle-down{
+    margin-top:2px !important;
+  }
+  
+  .card-heading:not(.collapsed) .rotate-icon {
+    transform: rotate(180deg);
+  } */
 
 .button-save {
     padding: 5px 7px !important;

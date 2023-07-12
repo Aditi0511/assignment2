@@ -165,15 +165,16 @@
     </div>
     <div>
         <div class="side-arrow-parent">
-            <a>
+            <a class="arrow-text">
                 <i class="fa fa-angle-left side-arrow" aria-hidden="true"></i><span>New Project</span></a>
         </div>
     </div>
 
     <div class="card card-all">
-        <div class="card-body card-body-heading main-title">
-            <a class="collapsed" data-bs-toggle="collapse" href="#detail-collapse" role="button" aria-expanded="false" aria-controls="collapseExample">
+        <div class="card-body  main-title">
+            <a class="collapsed card-heading" data-bs-toggle="collapse" href="#detail-collapse" role="button" aria-expanded="false" aria-controls="collapseExample">
                 <h5>Details</h5>
+                <!-- <span class="accicon"><i class="fas fa-angle-down rotate-icon "></i></span> -->
             </a>
             <div class="collapse" id="detail-collapse">
                 <div class="row row-detail">
@@ -274,7 +275,7 @@
                     <div class="col-3 cl-3">
                         <div class="user-detail-info">
                             <div class="user-related">
-                                <a data-bs-toggle="collapse" href="#desc-collapse" role="button" aria-expanded="false" aria-controls="desc-collapse">
+                                <a class="collapsed" data-bs-toggle="collapse" href="#desc-collapse" role="button" aria-expanded="false" aria-controls="desc-collapse">
                                     <h5 class="inner-header">Description</h5>
                                 </a>
                                 <div class="collapse" id="desc-collapse">
@@ -283,9 +284,10 @@
                             </div>
                         </div>
                     </div>
+                    
                     <div class="col-3 cl-3">
                         <div class="attach-doc">
-                            <a data-bs-toggle="collapse" href="#upload-doc-collapse" role="button" aria-expanded="false" aria-controls="upload-doc-collapse">
+                            <a class="collapsed" data-bs-toggle="collapse" href="#upload-doc-collapse" role="button" aria-expanded="false" aria-controls="upload-doc-collapse">
                                 <h5 class="inner-header">Attach Document</h5>
                             </a>
                             <div class="collapse" id="upload-doc-collapse">
@@ -318,7 +320,7 @@
     <div class="card card-all">
         <div class="card-body collapsed card-body-heading main-title">
             <a class="collapsed" data-bs-toggle="collapse" href="#costing-collapse" role="button" aria-expanded="false" aria-controls="costing-collapse">
-                <h5>Costing</h5>
+                <h5 class="collapse-itms">Costing</h5>
             </a>
             <div class="collapse" id="costing-collapse">
                 <div class="row row-detail">
@@ -344,9 +346,10 @@
                         <input class="form-control form-control-sm" type="text" placeholder="Branch" aria-label=".form-control-sm example">
                     </div>
                 </div>
+                
                 <div class="user-detail-info">
-                    <div class="user-related">
-                        <a data-bs-toggle="collapse" href="#cost-collapse" role="button" aria-expanded="false" aria-controls="cost-collapse">
+                    <div class="user-related ">
+                        <a class="collapsed" data-bs-toggle="collapse" href="#cost-collapse" role="button" aria-expanded="false" aria-controls="cost-collapse">
                             <h5 class="inner-header">Actual Cost & Profit</h5>
                         </a>
                         <div class="collapse" id="cost-collapse">
