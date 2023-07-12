@@ -10,7 +10,6 @@ body {
     background-color: aliceblue !important;
     overflow-x: hidden;
     color: rgb(151, 149, 149);
-    
 }
 
 .nav {
@@ -152,10 +151,12 @@ body {
 .sub-header .settings {
     background-color: white !important;
 }
-.settings i{
+
+.settings i {
     color: black !important;
 }
-.settings .settings-bold{
+
+.settings .settings-bold {
     color: black !important;
     text-decoration: none;
 }
@@ -163,7 +164,6 @@ body {
 .sub-header a {
     font-size: 11px;
     color: rgb(165, 163, 163) !important;
-    
 }
 
 .sub-header i {
@@ -228,14 +228,16 @@ ul {
     padding-bottom: 8px;
     color: gray;
 }
-.form-control{
+
+.form-control {
     border-radius: 7px !important;
     box-shadow: none !important;
 }
 
-.side-arrow-parent i{
+.side-arrow-parent i {
     color: gray!important;
 }
+
 .side-arrow-parent span {
     color: #2586cb !important;
     font-size: 16px;
@@ -243,19 +245,22 @@ ul {
     margin-top: 3px;
     text-decoration: none !important;
 }
-a:hover{
-    text-decoration: none !important;
-}
-a:active{
-    text-decoration: none !important;
-}
-a:visited{
-    text-decoration: none !important;
-}
-a:link{
+
+a:hover {
     text-decoration: none !important;
 }
 
+a:active {
+    text-decoration: none !important;
+}
+
+a:visited {
+    text-decoration: none !important;
+}
+
+a:link {
+    text-decoration: none !important;
+}
 
 .detail {
     background-color: white;
@@ -414,7 +419,6 @@ h1 {
     color: skyblue;
 }
 
-
 .upload-icon {
     margin: 25px 2px 2px 2px;
 }
@@ -505,10 +509,10 @@ a {
     margin-bottom: 30px;
 }
 
-
-.form-control-sm::placeholder{
-    color:#dbd8d8 !important;
+.form-control-sm::placeholder {
+    color: #dbd8d8 !important;
 }
+
 .user-related a::before {
     content: '-';
     float: left;
@@ -517,50 +521,64 @@ a {
 .user-related a.collapsed::before {
     content: '+';
 }
+
 .attach-doc a::before {
     content: '-';
     float: left;
 }
+
 .attach-doc a.collapsed::before {
     content: '+';
 }
 
-.card-body-heading .main-title ::after {
+.main-title a ::after {
     content: "\2303";
     float: right;
     color: rgb(80, 142, 235);
     font-size: 18px;
-    border: 1px solid black;
+    border: 1px solid rgb(80, 142, 235);
     border-radius: 3px;
+    padding: 1px 2px;
+    display: inline-block;
+    text-align: center;
 }
 
-.card-body-heading .main-title.collapsed ::after {
+.main-title a.collapsed ::after {
+    content: "\2303";
     transform: rotate(180deg);
+    float: right;
     color: rgb(80, 142, 235);
     font-size: 18px;
+    border: 1px solid rgb(80, 142, 235);
+    border-radius: 3px;
+    padding: 1px 2px;
     display: inline-block;
-    
+    text-align: center;
 }
-.button-save{
+
+.button-save {
     padding: 5px 7px !important;
-    font-size:12px !important ;
+    font-size: 12px !important;
     width: 100px !important;
     margin-left: 8px;
     margin-right: -3px;
     border-radius: 5px 0px 0px 5px !important;
 }
-.list-report{
+
+.list-report {
     border-right: 1px solid lightgray;
     height: 9px;
 }
-.button-carret{
+
+.button-carret {
     padding: 5px 7px !important;
-    font-size:12px !important ;
+    font-size: 12px !important;
     width: 30px !important;
     margin-right: 2px;
     border-radius: 0px 5px 5px 0px !important;
 }
-.form-check-label{
+
+.form-check-label {
     color: #acabab;
     font-weight: 400 !important;
 }
