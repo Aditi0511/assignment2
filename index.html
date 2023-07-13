@@ -68,7 +68,7 @@
                             <i class="fa-solid fa-chart-column "></i> Reports
                         </a>
                     </li>
-                    <li>
+                    <li class="project-active">
                         <a class="icon-project">
                             <i class="fa-brands fa-pied-piper-pp "></i> Projects
                         </a>
@@ -223,8 +223,8 @@
                 </div>
                 <div class=" row ">
                     <div class="cl-3">
-                    <a href="#">+ Another Person</a>
-                </div>
+                        <a href="#">+ Another Person</a>
+                    </div>
                 </div>
                 <div class="row mt-2">
                     <a href="#">+ Block /Wing Information</a>
@@ -239,11 +239,11 @@
         <div class="card-body card-body-heading main-title">
             <div class="sub-header-container">
                 <a class="collapsed" data-bs-toggle="collapse" href="#attach-doc-collapse" role="button" aria-expanded="false" aria-controls="attach-doc-collapse">
-                <h5>Schedule</h5>
+                    <h5>Schedule</h5>
                 </a>
             </div>
             <div class="collapse" id="attach-doc-collapse">
-                <div class="row row-detail">                  
+                <div class="row row-detail">
                     <div class="col-3 cl-3 padding-zero">
                         <input class="form-control form-control-sm form-control-cal" type="text" placeholder="Company GSTIN*" aria-label=".form-control-sm example">
                         <i class="fa-solid fa-calendar-days cal-day1"></i>
@@ -288,7 +288,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <!-- <div class="col-3">
                         <div class="attach-doc">
                             <a class="collapsed" data-bs-toggle="collapse" href="#upload-doc-collapse" role="button" aria-expanded="false" aria-controls="upload-doc-collapse">
@@ -305,19 +305,19 @@
                             </div>
                         </div>
                     </div> -->
-                      <div class="col-3">
+                    <div class="col-3">
                         <div class="attach-doc">
                             <a class="collapsed" data-bs-toggle="collapse" href="#upload-doc-collapse" role="button" aria-expanded="false" aria-controls="upload-doc-collapse">
                                 <h5 class="inner-header">Attach Document</h5>
                             </a>
                             <div class="collapse" id="upload-doc-collapse">
-                                <div class=" card-user-realted">                                    
-                                        <div class="mb-3">
-                                             <form action="#" class="forn-upload">
-                                             <i class="fas fa-cloud-upload-alt"></i>
-                                             <p>Upload file</p>
-                                             </form>  
-                                        </div>                                   
+                                <div class=" card-user-realted">
+                                    <div class="mb-3">
+                                        <form action="#" class="forn-upload">
+                                            <i class="fas fa-cloud-upload-alt"></i>
+                                            <p>Upload file</p>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -344,6 +344,7 @@
                 <h5 class="collapse-itms">Costing</h5>
             </a>
             <div class="collapse" id="costing-collapse">
+                <div class="divider"></div>
                 <div class="row row-detail">
                     <div class="col-3 cl-3">
                         <input class="form-control form-control-sm form-control-cal" type="text" placeholder="Company GSTIN*" aria-label=".form-control-sm example">
@@ -358,8 +359,6 @@
                     <div class="col-3 cl-3">
                         <input class="form-control form-control-sm" type="text" placeholder="Project Name*" aria-label=".form-control-sm example">
                     </div>
-                </div>
-                <div class="row cost-gst">
                     <div class="col-3 cl-3">
                         <input class="form-control form-control-sm" type="text" placeholder="Company GSTIN*" aria-label=".form-control-sm example">
                     </div>
@@ -367,14 +366,11 @@
                         <input class="form-control form-control-sm" type="text" placeholder="Branch" aria-label=".form-control-sm example">
                     </div>
                 </div>
-                <div class="row row-user-info">
-                <div class="user-detail-info">
-                    <div class="user-related ">
-                        <div class="col-3 ">
+                <div>
+                    <div class="user-detail-info user-related">
                         <a class="collapsed" data-bs-toggle="collapse" href="#cost-collapse" role="button" aria-expanded="false" aria-controls="cost-collapse">
                             <h5 class="inner-header">Actual Cost & Profit</h5>
                         </a>
-                        </div>
                         <div class="collapse" id="cost-collapse">
                             <div class="row row-cost">
                                 <div class="col-3">
@@ -389,18 +385,17 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="button-section">
-                    <button type="button" class="btn btn-outline-secondary">Cancel</button>
-                    <button type="button" class="btn btn-primary button-save">Save as Draft 
+                    <div class="button-section">
+                        <button type="button" class="btn btn-outline-secondary">Cancel</button>
+                        <button type="button" class="btn btn-primary button-save">Save as Draft 
                         </button>
-                    <button type="button" class="btn btn-primary button-carret">
+                        <button type="button" class="btn btn-primary button-carret">
                             <i class="fa-solid fa-caret-down"></i>
                         </button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
 </body>
 
