@@ -2,7 +2,7 @@
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
-    font-family: "Rubik", sans-serif;
+   
 }
 
 body {
@@ -10,6 +10,7 @@ body {
     background-color: aliceblue !important;
     overflow-x: hidden;
     color: rgb(151, 149, 149);
+    letter-spacing: 0.4px;
 }
 
 .nav {
@@ -64,10 +65,6 @@ body {
     float: right;
 }
 
-.middle-items li {
-    margin-right: 10px;
-}
-
 .middle-items li i {
     font-size: 17px !important;
 }
@@ -76,8 +73,6 @@ body {
     color: #2586cb !important;
     text-decoration: none;
 }
-
-
 
 .col-3 .orchid-img {
     width: 23px;
@@ -449,8 +444,9 @@ h1 {
 }
 
 .card-body h5 {
-    color:#5e5a5a;
+    color: #706d6d;
     font-size: 15px;
+    font-weight: 550;
 }
 
 .row {
@@ -460,7 +456,7 @@ h1 {
 
 .row-detail {
     border-top: 2px solid rgb(247, 242, 242);
-    margin-bottom: 5px;
+   
 }
 h6{
     font-size: 15px;
@@ -468,22 +464,30 @@ h6{
 a {
     color: #2586cb !important;
 }
-
+.padding-zero{
+    padding-left: 0px;
+    padding-right: 0px;
+}
 .card-body-heading a {
     font-size: 13px;
 }
-
+.sub-header-container{
+    border-bottom: 2px;
+}
 .row-user-info {
     display: flex;
+    margin-top: 5px;
 }
-
-.project-cost {
+.cost-gst{
+    margin-top: 5px;
+}
+/* .project-cost {
     margin-top: auto !important;
-}
+} */
 
-.task-cost {
+/* .task-cost {
     margin-top: auto !important;
-}
+} */
 
 .form-desc {
     height: 65px !important;
@@ -492,7 +496,7 @@ a {
 .inner-header {
     color: #2586cb !important;
     font-weight: 400 !important;
-    padding: 2px 7px;
+    padding: 12px 7px;
     font-size: 14px !important;
 }
 
@@ -517,21 +521,25 @@ a {
 .user-related a::before {
     content: '-';
     float: left;
+     line-height: 3;
 }
 
 .user-related a.collapsed::before {
     content: '+';
+     line-height: 3;
 }
-.user-related{
-    margin-left: 10px;
-}
+
 .attach-doc a::before {
     content: '-';
     float: left;
+    line-height: 3;
+   
 }
 
 .attach-doc a.collapsed::before {
     content: '+';
+     line-height: 3;
+   
 }
 
 .main-title>a ::after {
@@ -546,7 +554,7 @@ a {
     text-align: center;
     line-height: 0.5;
     height: 1px;
-    font-weight: 600;
+    font-weight: 500;
     border-radius: 6px;
    
 }
@@ -563,7 +571,7 @@ a {
     text-align: center;
     line-height: 0.5;
     height: 1px;
-    font-weight: 600;
+    font-weight: 500;
     border-radius: 6px;
 }
 
@@ -600,6 +608,22 @@ a {
     width: 30px !important;
     margin-right: 2px;
     border-radius: 0px 5px 5px 0px !important;
+}
+.form-upload{
+    border:2px solid #797777;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    justify-content: center;
+    flex-direction: column;
+    height: 170px;
+    margin:30px 0;
+
+}
+
+.form-upload i{
+    font-size: 16px;
+    margin-top: 15px;
 }
 
 .form-check-label {
