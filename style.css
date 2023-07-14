@@ -35,8 +35,6 @@ body {
 
 .list-item li {
     height: 100%;
-    padding-left: 12px;
-    margin-left: 3px;
     display: inline-block;
     text-align: center;
     display: flex;
@@ -65,7 +63,11 @@ body {
 .middle-items {
     float: right;
 }
-
+.middle-items li {
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 15px;
+}
 .middle-items li i {
     font-size: 17px !important;
 }
@@ -81,8 +83,10 @@ body {
 
 .col-3 .company-info {
     position: relative;
-    padding-right: 0px;
-    float: right;
+    padding-right: 19px;
+    display: flex;
+    justify-content: right;
+   
 }
 
 .company-info .company-name {
@@ -90,21 +94,24 @@ body {
     font-size: 13px !important;
     text-decoration: none;
     color: #2c2a2a !important;
-    margin-left: -6px;
+    margin-left: 5px;
+    
 }
 
 .project-active {
-    border-bottom: 1px solid #2586cb;
+    border-bottom: 2px solid #2586cb;
 }
 
 .company-info .fa-caret-down {
     position: absolute;
     top: 25px;
     margin-left: auto;
-    right: 0px;
-    color: black;
+    color: rgb(83, 82, 82);
+    margin-right: 5px;
 }
-
+.company-info li{
+    padding-left: 5px;
+}
 .pro-inventory {
     white-space: nowrap;
 }
@@ -300,8 +307,8 @@ a:link {
 }
 
 .divider {
-    border: 1px solid #2586cb;
-    ;
+    border: 1px solid rgb(238, 234, 234);
+    margin:0px 9px;
 }
 
 .detail-secondary {
@@ -327,11 +334,12 @@ a:link {
     top: 72px;
     left: 308px;
     color: lightgray;
+    top: 78px;
 }
 
 .cal-day2 {
     position: absolute;
-    top: 72px;
+    top: 78px;
     right: 29px;
 }
 
@@ -395,9 +403,7 @@ a:link {
     margin-top: -12px !important;
 }
 
-.row-collapse-set a {
-    padding-left: 20px;
-}
+
 
 .row-collapse-set {
     margin-bottom: 5px;
@@ -436,11 +442,14 @@ h1 {
     transition: all 0.3s ease-in-out;
     font-size: 14px;
 }
+.collapse-items{
+    margin-left: 8px;
+}
 
 .card-all {
     margin: 7px 6px;
     margin-left: px;
-    border-radius: 8px;
+    border-radius: 13px;
     /* border: none !important; */
 }
 
@@ -448,7 +457,9 @@ h1 {
     text-decoration: none !important;
     color: #2586cb !important;
 }
-
+.card-body{
+    padding: 18px 7px;
+}
 .card-body h5 {
     color: #706d6d;
     font-size: 15px;
@@ -461,7 +472,8 @@ h1 {
 }
 
 .row-detail {
-    margin-top: 13px;
+    margin-top: 11px;
+
 }
 
 h6 {
@@ -472,10 +484,7 @@ a {
     color: #2586cb !important;
 }
 
-.padding-zero {
-    padding-left: 0px;
-    padding-right: 0px;
-}
+
 
 .card-body-heading a {
     font-size: 13px;
@@ -511,7 +520,7 @@ a {
 .inner-header {
     color: #2586cb !important;
     font-weight: 400 !important;
-    padding: 12px 7px;
+    padding: 12px 10px;
     font-size: 14px !important;
 }
 
@@ -534,29 +543,36 @@ a {
 .form-control-sm::placeholder {
     color: #dbd8d8 !important;
 }
-
+.btn{
+    border-radius: 6px !important;
+}
 .user-related a::before {
     content: '-';
     float: left;
-    line-height: 3;
+    line-height: 2.7;
 }
 
 .user-related a.collapsed::before {
     content: '+';
-    line-height: 3;
+    line-height: 2.7;
 }
 
 .attach-doc a::before {
     content: '-';
     float: left;
-    line-height: 3;
+    line-height: 2.7;
 }
 
 .attach-doc a.collapsed::before {
     content: '+';
-    line-height: 3;
+    line-height: 2.7;
 }
-
+.separate-line{
+    height: 15px;
+    background-color: #c1b9b9;
+    width: 1px;
+    margin-top: 2px;
+}
 .main-title>a ::after {
     content: "\2303";
     float: right;
@@ -564,13 +580,14 @@ a {
     font-size: 22px;
     border: 1px solid rgb(204, 220, 245);
     border-radius: 3px;
-    padding: 10px 6px;
+    padding: 9px 3px;
     display: inline-block;
     text-align: center;
     line-height: 0.5;
     height: 1px;
     font-weight: 500;
     border-radius: 6px;
+    margin:-5px 8px 0px 0px;
 }
 
 .main-title>a.collapsed ::after {
@@ -580,13 +597,14 @@ a {
     color: rgb(42, 108, 207);
     font-size: 22px;
     border: 1px solid rgb(204, 220, 245);
-    padding: 10px 6px;
+    padding: 9px 3px;
     display: inline-block;
     text-align: center;
     line-height: 0.5;
     height: 1px;
     font-weight: 500;
     border-radius: 6px;
+    margin:-5px 8px 0px 0px;
 }
 
 
@@ -612,10 +630,7 @@ a {
     border-radius: 5px 0px 0px 5px !important;
 }
 
-.list-report {
-    border-right: 1px solid lightgray;
-    height: 9px;
-}
+
 
 .button-carret {
     padding: 5px 7px !important;
@@ -644,4 +659,8 @@ a {
 .form-check-label {
     color: #acabab;
     font-weight: 400 !important;
+}
+.actual-project-row {
+    padding-bottom: 25px;
+    margin-bottom: 10px;
 }
