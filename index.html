@@ -20,7 +20,7 @@
 <body>
     <header class="nav">
         <div class="row nav-row">
-            <div class="col-7">
+            <div class="col-6">
                 <ul class="list-item">
                     <li>
                         <a>
@@ -87,8 +87,8 @@
                     </a>
                 </ul>
             </div>
-            <div class="col-2">
-                <ul class="list-item middle-items">
+            <div class="col-3">
+                <ul class="middle-items">
                     <li>
                         <i class="fa-solid fa-mobile-retro"></i>
                     </li>
@@ -101,8 +101,8 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-3 company-related">
-                <ul class="list-item company-info">
+            <div class="col-3">
+                <ul class="company-info">
                     <li>
                         <a>
                             <img class="orchid-img" src="OIP-removebg-preview.png" />
@@ -141,7 +141,7 @@
                 </a>
                 <div class="separate-line"></div>
             </li>
-            
+
             <li class="list1">
                 <a><i class=" fa-solid fa-building-columns "></i>
                 Banking
@@ -238,9 +238,9 @@
     </div>
     <div class="card card-all">
         <div class="card-body main-title">
-                <a class="collapsed card-heading" data-bs-toggle="collapse" href="#attach-doc-collapse" role="button" aria-expanded="false" aria-controls="attach-doc-collapse">
-                    <h5 class="collapse-items">Schedule</h5>
-                </a>
+            <a class="collapsed card-heading" data-bs-toggle="collapse" href="#attach-doc-collapse" role="button" aria-expanded="false" aria-controls="attach-doc-collapse">
+                <h5 class="collapse-items">Schedule</h5>
+            </a>
             <div class="collapse" id="attach-doc-collapse">
                 <div class="divider"></div>
                 <div class="row row-detail">
@@ -303,7 +303,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div>s
                     </div> -->
                     <div class="col-3">
                         <div class="attach-doc">
@@ -311,12 +311,17 @@
                                 <h5 class="inner-header">Attach Document</h5>
                             </a>
                             <div class="collapse" id="upload-doc-collapse">
-                                <div class=" card-user-realted">
-                                    <div class="row-detail">
-                                        <form action="#" class="forn-upload">
-                                            <i class="fas fa-cloud-upload-alt"></i>
-                                            <p>Upload file</p>
-                                        </form>
+                                <div class="card-user-realted">
+                                    <div>
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <input type="file" id="upload-doc" hidden>
+                                                <label for="upload-doc" class="upload-doc">
+                                                    <i class="fa-solid fa-folder-plus"></i>
+                                                    <span>Upload Document</span> 
+                                                </label>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -360,8 +365,8 @@
                         <input class="form-control form-control-sm" type="text" placeholder="Project Name*" aria-label=".form-control-sm example">
                     </div>
                 </div>
-                    <div class="row row-detail">
-                    <div class="col-3" >
+                <div class="row row-detail">
+                    <div class="col-3">
                         <input class="form-control form-control-sm" type="text" placeholder="Company GSTIN*" aria-label=".form-control-sm example">
                     </div>
                     <div class="col-3">
@@ -370,37 +375,37 @@
                 </div>
                 <div class="row actual-project-head ">
                     <div class="col-3 ">
-                    <div class="user-detail-info user-related">
-                        <a class="collapsed" data-bs-toggle="collapse" href="#cost-collapse" role="button" aria-expanded="false" aria-controls="cost-collapse">
-                            <h5 class="inner-header">Actual Cost & Profit</h5>
-                        </a>
+                        <div class="user-detail-info user-related">
+                            <a class="collapsed" data-bs-toggle="collapse" href="#cost-collapse" role="button" aria-expanded="false" aria-controls="cost-collapse">
+                                <h5 class="inner-header">Actual Cost & Profit</h5>
+                            </a>
                         </div>
                     </div>
-                        <div class="collapse" id="cost-collapse">
-                            <div class="row actual-project-row">
-                                <div class="col-3">
-                                    <input class="form-control form-control-sm" type="text" placeholder="Branch" aria-label=".form-control-sm example">
-                                </div>
-                                <div class="col-3">
-                                    <input class="form-control form-control-sm" type="text" placeholder="Branch" aria-label=".form-control-sm example">
-                                </div>
-                                <div class="col-3">
-                                    <input class="form-control form-control-sm" type="text" placeholder="Branch" aria-label=".form-control-sm example">
-                                </div>
+                    <div class="collapse" id="cost-collapse">
+                        <div class="row actual-project-row">
+                            <div class="col-3">
+                                <input class="form-control form-control-sm" type="text" placeholder="Branch" aria-label=".form-control-sm example">
+                            </div>
+                            <div class="col-3">
+                                <input class="form-control form-control-sm" type="text" placeholder="Branch" aria-label=".form-control-sm example">
+                            </div>
+                            <div class="col-3">
+                                <input class="form-control form-control-sm" type="text" placeholder="Branch" aria-label=".form-control-sm example">
                             </div>
                         </div>
-               
                     </div>
-                    <div class="button-section">
-                        <button type="button" class="btn btn-outline-secondary">Cancel</button>
-                        <button type="button" class="btn btn-primary button-save">Save as Draft 
+
+                </div>
+                <div class="button-section">
+                    <button type="button" class="btn btn-outline-secondary">Cancel</button>
+                    <button type="button" class="btn btn-primary button-save">Save as Draft 
                         </button>
-                        <button type="button" class="btn btn-primary button-carret">
+                    <button type="button" class="btn btn-primary button-carret">
                             <i class="fa-solid fa-caret-down"></i>
                         </button>
-                    </div>
+                </div>
+            </div>
         </div>
-    </div>
 </body>
 
 </html>
