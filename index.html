@@ -20,7 +20,7 @@
 <body>
     <header class="nav">
         <div class="row nav-row">
-            <div class="col-6">
+            <div class="col-7">
                 <ul class="list-item">
                     <li>
                         <a>
@@ -87,7 +87,7 @@
                     </a>
                 </ul>
             </div>
-            <div class="col-3">
+            <div class="col-2">
                 <ul class="middle-items">
                     <li>
                         <i class="fa-solid fa-mobile-retro"></i>
@@ -174,6 +174,7 @@
         <div class="card-body  main-title">
             <a class="collapsed card-heading" data-bs-toggle="collapse" href="#detail-collapse" role="button" aria-expanded="false" aria-controls="collapseExample">
                 <h5 class="collapse-items">Details</h5>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
                 <!-- <span class="accicon"><i class="fas fa-angle-down rotate-icon "></i></span> -->
             </a>
             <div class="collapse" id="detail-collapse">
@@ -240,6 +241,7 @@
         <div class="card-body main-title">
             <a class="collapsed card-heading" data-bs-toggle="collapse" href="#attach-doc-collapse" role="button" aria-expanded="false" aria-controls="attach-doc-collapse">
                 <h5 class="collapse-items">Schedule</h5>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
             </a>
             <div class="collapse" id="attach-doc-collapse">
                 <div class="divider"></div>
@@ -283,7 +285,7 @@
                                     <h5 class="inner-header">Description</h5>
                                 </a>
                                 <div class="collapse" id="desc-collapse">
-                                    <input class="form-control form-control-sm form-desc" type="text" placeholder="Description" aria-label=".form-control-sm example">
+                                    <textarea rows="5" cols="43" placeholder="Description"></textarea>
                                 </div>
                             </div>
                         </div>
@@ -312,17 +314,17 @@
                             </a>
                             <div class="collapse" id="upload-doc-collapse">
                                 <div class="card-user-realted">
-                                    <div>
-                                        <div class="card">
+
+                                        <div class="card card-file">
                                             <div class="card-body">
                                                 <input type="file" id="upload-doc" hidden>
                                                 <label for="upload-doc" class="upload-doc">
-                                                    <i class="fa-solid fa-folder-plus"></i>
+                                                    <i class="fa-solid fa-folder-plus "></i>
                                                     <span>Upload Document</span> 
                                                 </label>
                                             </div>
                                         </div>
-                                    </div>
+                                
                                 </div>
                             </div>
                         </div>
@@ -345,8 +347,9 @@
     </div>
     <div class="card card-all">
         <div class="card-body main-title">
-            <a class="collapsed" data-bs-toggle="collapse" href="#costing-collapse" role="button" aria-expanded="false" aria-controls="costing-collapse">
+            <a class="collapsed card-heading" data-bs-toggle="collapse" href="#costing-collapse" role="button" aria-expanded="false" aria-controls="costing-collapse">
                 <h5 class="collapse-items">Costing</h5>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
             </a>
             <div class="collapse" id="costing-collapse">
                 <div class="divider"></div>
@@ -373,7 +376,7 @@
                         <input class="form-control form-control-sm" type="text" placeholder="Branch" aria-label=".form-control-sm example">
                     </div>
                 </div>
-                <div class="row actual-project-head ">
+                <div class="row row-user-info">
                     <div class="col-3 ">
                         <div class="user-detail-info user-related">
                             <a class="collapsed" data-bs-toggle="collapse" href="#cost-collapse" role="button" aria-expanded="false" aria-controls="cost-collapse">
